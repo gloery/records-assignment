@@ -1,0 +1,5 @@
+Oct 15 15:55:39 SourceFireIS1000 SFIMS: [DE_1][122:23:1] SQL injection attack [Priority: 1] {PROTO6} 10.0.0.123:1245 -> 22.4.0.197:80
+Oct 9 15:55:39 SourceFireIS1000 SFIMS: [DE_1][122:23:1] portscan: UDP Filtered Portsweep [Classification: Attempted Information Leak] [Priority: 2] {PROTO255} 192.168.0.220 -> 208.78.4.5
+Jan 9 00:00:01 SourceFireIS1000 SFIMS: [DE_1][122:23:1] portscan: UDP Filtered [Classification: Attempted Information Leak] [Priority: 2] {PROTO255} 192.168.0.220:1823 -> 127.0.0.1
+Oct 9 15:55:39 SourceFireIS1000 SFIMS: [DE_1][122:23:1] portscan: UDP Filtered Portsweep [Classification: Attempted Information Leak] [Priority: 2] {PROTO255} 192.168.0.220
+Oct 20 15:55:39 192.168.0.220
