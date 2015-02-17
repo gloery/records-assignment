@@ -73,7 +73,7 @@ def process_alert(record_object, server):
     xmlrpclib.Marshaller.dispatch[type(0L)] = lambda _, v, w: w("<value><i8>%d</i8></value>" % v)
     
     # datetime objects can be passed in by default as parameters to server functions; however, setting use_datetime to True anyway to keep formatting consistent for input/output
-    server = xmlrpclib.ServerProxy('http://'+server, use_datetime = True)
+    server = xmlrpclib.ServerProxy('http://' + server, use_datetime = True)
     return server.process_alert(start_time, ip_port_pair)
 
 def ip_to_int(ip_address):
@@ -97,13 +97,12 @@ def int_to_ip(input_int):
     doing data analysis later on.
     """
     full_address = ""
-    # TODO: should there be padding spaces for division?
-    first_group = int(input_int/(256**3)) % 256
-    second_group = int(input_int/(256**2)) % 256
-    third_group = int(input_int/256) % 256
+    first_group = int(input_int / (256**3)) % 256
+    second_group = int(input_int / (256**2)) % 256
+    third_group = int(input_int / 256) % 256
     fourth_group = int(input_int) % 256
     
-    full_address = str(first_group)+'.'+str(second_group)+'.'+str(third_group)+'.'+str(fourth_group)
+    full_address = str(first_group) + '.' + str(second_group) + '.' + str(third_group) + '.' + str(fourth_group)
     return full_address
 
 def main():
